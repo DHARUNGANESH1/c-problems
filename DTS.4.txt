@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    char my_var;
+     my_var = 'A';
+    
+    printf("%c",my_var);
+    return 0;}
