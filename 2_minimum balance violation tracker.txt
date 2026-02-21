@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    int N, initialBalance, transaction, balance,
+    lowDays=0, i=0;
+    printf("Enter the number of days: ");
+    scanf("%d",&N);
+    printf("Enter the initial balance: ");
+    scanf("%d",&initialBalance);
+    balance=initialBalance;
+    while(i<N){
+        printf("ENTER DEPOSIT OR TAKEN AMOUNT:");
+        scanf("%d",&transaction);
+        balance+=transaction;
+        if(balance<2000) lowDays++;
+        i++;
+    }
+    printf("Final Balance: %d\n",balance);
+    printf("Low Balance Days: %d\n",lowDays);
+    return 0;
+}
